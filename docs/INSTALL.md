@@ -17,20 +17,14 @@ sudo apt-get update
 sudo apt-get -y install python-pip
 sudo apt-get -y install python-tk
 
-#download HYDROID
-wget https://github.com/ncbi/HYDROID/archive/v0.0.3.tar.gz
-tar -zxf v0.0.3.tar.gz
-mv HYDROID-0.0.3 HYDROID
-cd HYDROID
-
 #Enable virtualenv
 pip install virtualenv
 virtualenv venv
 source venv/bin/activate
-
-#Install packages
 pip install --upgrade pip
-pip install -r requirements.txt
+
+#Install HYDROID
+pip install https://github.com/molsim/HYDROID/archive/master.tar.gz
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
@@ -40,9 +34,9 @@ tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
 cd freesasa
 ./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
 make; make install
-cd ..
 
 #Test that it's working
+#Download example1 !!!!!!
 cd example1
 python exp_s2_assign_peaks.py
 ~~~~
