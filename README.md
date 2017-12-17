@@ -5,6 +5,7 @@ HYDROID (HYDroxyl-Radical fOotprinting Interpretation for DNA) is a python packa
 
 ## Documentation
 [For full documentation - click here](docs/INDEX.md)
+
 Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGdsPyn0nVSvrRnyvuvkRCrNBjqeuC).
 
 ## Quick-start guide
