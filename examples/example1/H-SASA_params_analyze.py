@@ -9,7 +9,7 @@ Here we produce an interactive web based plot to analyze various set of
 parameters to calculate SASA.
 
 #Script requires bokeh library and dependencies
-#Install them with "pip install -r req_int_plots.txt"
+#Install them with "pip install -r H-SASA_params_req.txt"
 
 """
 from bokeh.models.widgets import Panel, Tabs
