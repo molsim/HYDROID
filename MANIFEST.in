@@ -5,6 +5,7 @@ include HYDROID/pkgdata/cnr.otf
 include HYDROID/pkgdata/cnrb.otf
 include HYDROID/pkgdata/test_data/lane_profiles.xls
 include HYDROID/pkgdata/test_data/lane_config.csv
+include HYDROID/pkgdata/test_data/test.pdb
 
 global-include VERSION
 recursive-exclude docs *
