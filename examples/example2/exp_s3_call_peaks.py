@@ -22,7 +22,6 @@ any saved records will be written at the end of the file and override any previo
 from Bio import SeqIO
 
 import sys
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDexp import call_peaks_interactive
 

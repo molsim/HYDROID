@@ -15,7 +15,6 @@ from animate import *
 
 import os,sys,tempfile
 
-sys.path.insert(0,'../..')
 sys.path.insert(0,'../venv/lib/python2.7/site-packages')
 
 from Bio.Seq import Seq

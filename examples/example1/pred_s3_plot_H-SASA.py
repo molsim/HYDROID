@@ -15,7 +15,6 @@ from Bio.Seq import Seq
 import os,sys,tempfile
 import pandas as pd
 
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDexp import plot_prof_on_seq,simulate_gel
 

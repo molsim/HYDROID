@@ -31,7 +31,6 @@ import numpy as np
 if PARALLEL:
 	from multiprocessing import Process, Manager
 
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDpred import get_DNA_H_SASA
 

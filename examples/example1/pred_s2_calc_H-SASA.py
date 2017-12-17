@@ -18,7 +18,6 @@ See get_DNA_H_SASA inline help for explanation of parameters.
 import os
 from Bio.Seq import Seq
 import sys
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDpred import get_DNA_H_SASA
 

@@ -14,7 +14,6 @@ this allows to extract unbaised DNA cleavage intensities for every DNA position.
 from Bio import SeqIO
 from os import mkdir
 import sys
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDexp import fit_peaks
 

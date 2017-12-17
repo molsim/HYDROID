@@ -12,7 +12,6 @@ Plotting the extracted DNA cleavage frequencies along the seqeunce in a graphica
 from Bio import SeqIO
 import os
 import sys
-sys.path.insert(0,'../..')
 
 from HYDROID.HYDROIDexp import plot_prof_on_seq
 
