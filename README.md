@@ -11,10 +11,10 @@ Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGd
 ## Quick-start guide
 
 ### Installation
-
+First, install Miniconda with Python2.7 from [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 Use Continuum Anaconda ([conda_env.yml](conda_env.yml)).
 
-[INSTALL.md](INSTALL.md) provides common installation examples for Linux, MacOS and PC.
+[INSTALL.md](docs/INSTALL.md) provides common installation examples for Linux, MacOS and PC.
 
 
 ## Citing HYDROID
