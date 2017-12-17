@@ -1,4 +1,8 @@
 include AUTHORS.rst CHANGES.rst DESCRIPTION.md LICENSE
+include HYDROID/pkgdata/amber10_rmin.config
+include HYDROID/pkgdata/charmm36_rmin.config
+include HYDROID/pkgdata/cnr.otf
+include HYDROID/pkgdata/cnrb.otf
 global-include VERSION
 recursive-exclude docs *
 recursive-exclude examples *.pyc
