@@ -82,7 +82,7 @@ setup(
     extras_require = {
     'pred': [
         'Cython',
-    ]
+    ],},
 
     # Data files included in your packages. If using Python 2.6 or less, 
     # then these have to be included in MANIFEST.in as well.
