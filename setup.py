@@ -97,7 +97,7 @@ setup(
     #        'HYDROID=HYDROID.main:main',
     #    ],
     #},
-    python_requires='==2.7',
+    python_requires='==2.7*',
     # MANIFEST.in included entries should be included as package data and
     # installed into site-packages 
     include_package_data=True,
