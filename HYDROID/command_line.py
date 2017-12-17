@@ -10,8 +10,14 @@ def test_exp():
 
 	from HYDROID.HYDROIDexp import assign_peaks_interactive
 
-	lane_profile_file = pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_profiles.xls')
-	lane_config_file = pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_config.csv')
+	temp = tempfile.NamedTemporaryFile()
+	temp2 = tempfile.NamedTemporaryFile()
+	temp.write(pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_profiles.xls'))
+	temp2.write(pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_config.csv'))
+	temp.seek(0)
+	temp2.seek(0)
+	lane_profile_file = temp.name
+	lane_config_file = temp2.name
 
 	lane_names=['scCSE4_601TA_BS']
 
@@ -25,7 +31,8 @@ def test_exp():
 	###################################
 	for LN in lane_names:
 		assign_peaks_interactive(lane_profile_file,lane_config_file,LN)
-
+	temp.close()
+	temp2.close()
 
 def test_pred():
 	
