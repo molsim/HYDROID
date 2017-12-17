@@ -83,10 +83,7 @@ setup(
     # Data files included in your packages. If using Python 2.6 or less, 
     # then these have to be included in MANIFEST.in as well.
     package_data={
-        'HYDROID': ['pkgdata/amber10_rmin.config'],
-        'HYDROID': ['pkgdata/charmm36_rmin.config'],
-        'HYDROID': ['pkgdata/cnr.otf'],
-        'HYDROID': ['pkgdata/cnrb.otf'],
+        'HYDROID': ['pkgdata/amber10_rmin.config','pkgdata/charmm36_rmin.config','pkgdata/cnr.otf','pkgdata/cnrb.otf'],
     },
 
     # To provide executable scripts, use entry points in preference to the
