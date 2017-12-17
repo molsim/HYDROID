@@ -1,0 +1,4 @@
+include AUTHORS.rst CHANGES.rst DESCRIPTION.md LICENSE
+global-include VERSION
+recursive-exclude docs *
+recursive-exclude examples *.pyc
