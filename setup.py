@@ -25,7 +25,7 @@ setup(
     url='https://github.com/ncbi/HYDROID',
 
     # Author details
-    author='Alexey K. Shaytan, Grigoriy A. Armeev, Anna R. Panchenko',
+    author='Alexey K. Shaytan, Grigoriy A. Armeev, David Landsman, Anna R. Panchenko',
     author_email='alex@intbio.org',
 
     # Choose your license
