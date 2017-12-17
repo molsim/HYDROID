@@ -3,6 +3,9 @@ include HYDROID/pkgdata/amber10_rmin.config
 include HYDROID/pkgdata/charmm36_rmin.config
 include HYDROID/pkgdata/cnr.otf
 include HYDROID/pkgdata/cnrb.otf
+include HYDROID/pkgdata/test_data/lane_profiles.xls
+include HYDROID/pkgdata/test_data/lane_config.csv
+
 global-include VERSION
 recursive-exclude docs *
 recursive-exclude examples *.pyc

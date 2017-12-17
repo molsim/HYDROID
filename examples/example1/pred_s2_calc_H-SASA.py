@@ -17,7 +17,6 @@ See get_DNA_H_SASA inline help for explanation of parameters.
 
 import os
 from Bio.Seq import Seq
-import sys
 
 from HYDROID.HYDROIDpred import get_DNA_H_SASA
 

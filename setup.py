@@ -93,11 +93,13 @@ setup(
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # pip to create the appropriate form of executable for the target platform.
-    #entry_points={
-    #    'console_scripts': [
-    #        'HYDROID=HYDROID.main:main',
-    #    ],
-    #},
+    entry_points={
+        'console_scripts': [
+            'HYDROID_test_exp=HYDROID.command_line:test_exp',
+            'HYDROID_test_pred=HYDROID.command_line:test_pred',
+
+        ],
+    },
     python_requires='==2.7.*',
     # MANIFEST.in included entries should be included as package data and
     # installed into site-packages 

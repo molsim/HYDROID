@@ -25,7 +25,6 @@ any saved records will be written at the end of the file and override any previo
 
 
 """
-import sys
 
 from HYDROID.HYDROIDexp import assign_peaks_interactive
 
