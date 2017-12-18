@@ -12,23 +12,22 @@ Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGd
 
 ### Quick installation
 Install Miniconda with Python2.7 for your platform from [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
-`conda install -c hydroid hydroid`
+```conda install -c hydroid hydroid```
 
 Test HYDROID:
 
-`HYDROID_test_exp`
-
-`HYDROID_test_pred`
+```HYDROID_test_exp
+HYDROID_test_pred```
 
 
 For alternative installation instructions for Linux, MacOS and PC see [INSTALL.md](docs/INSTALL.md).
 
 ### Start by downloading and modifying an example
 
-`HYDOIRD_get_example1
+```HYDOIRD_get_example1
 cd example1
 python exp_s2_assign_peaks.py
-...`
+...```
 
 See full example set and instructions in [examples](examples/README.md)
 
