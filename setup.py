@@ -4,7 +4,7 @@ import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-version_file = open(os.path.join(here, 'HYDROID', 'VERSION'))
+version_file = open(os.path.join(here, 'hydroid', 'VERSION'))
 version = version_file.read().strip()
 
 # Get the long description from the relevant file
@@ -12,7 +12,7 @@ with codecs.open(os.path.join(here, 'DESCRIPTION.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='HYDROID',
+    name='hydroid',
 
     # Versions should comply with PEP440. For single-sourced versioning, see
     # http://packaging.python.org/en/latest/tutorial.html#version
@@ -77,7 +77,7 @@ setup(
     # Data files included in your packages. If using Python 2.6 or less, 
     # then these have to be included in MANIFEST.in as well.
     package_data={
-        'HYDROID': ['pkgdata/amber10_rmin.config','pkgdata/charmm36_rmin.config','pkgdata/cnr.otf','pkgdata/cnrb.otf'],
+        'hydroid': ['pkgdata/amber10_rmin.config','pkgdata/charmm36_rmin.config','pkgdata/cnr.otf','pkgdata/cnrb.otf'],
     },
 
     # To provide executable scripts, use entry points in preference to the
@@ -85,8 +85,8 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'HYDROID_test_exp=HYDROID.command_line:test_exp',
-            'HYDROID_test_pred=HYDROID.command_line:test_pred',
+            'HYDROID_test_exp=hydroid.command_line:test_exp',
+            'HYDROID_test_pred=hydroid.command_line:test_pred',
 
         ],
     },

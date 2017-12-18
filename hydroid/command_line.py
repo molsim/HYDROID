@@ -8,12 +8,12 @@ import tempfile
 
 def test_exp():
 
-	from HYDROID.HYDROIDexp import assign_peaks_interactive
+	from hydroid.HYDROIDexp import assign_peaks_interactive
 
 	temp = tempfile.NamedTemporaryFile()
 	temp2 = tempfile.NamedTemporaryFile()
-	temp.write(pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_profiles.xls'))
-	temp2.write(pkgutil.get_data('HYDROID', 'pkgdata/test_data/lane_config.csv'))
+	temp.write(pkgutil.get_data('hydroid', 'pkgdata/test_data/lane_profiles.xls'))
+	temp2.write(pkgutil.get_data('hydroid', 'pkgdata/test_data/lane_config.csv'))
 	temp.seek(0)
 	temp2.seek(0)
 	lane_profile_file = temp.name
@@ -35,11 +35,10 @@ def test_exp():
 	temp2.close()
 
 def test_pred():
-	
-	from HYDROID.HYDROIDpred import get_DNA_H_SASA
+	hydroid.HYDROIDpred import get_DNA_H_SASA
 	out_path="results"
 	temp = tempfile.NamedTemporaryFile()
-	temp.write(pkgutil.get_data('HYDROID', 'pkgdata/test_data/test.pdb'))
+	temp.write(pkgutil.get_data('hydoird', 'pkgdata/test_data/test.pdb'))
 	temp.seek(0)
 
 	try:
