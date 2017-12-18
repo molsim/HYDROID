@@ -28,12 +28,12 @@ pip install https://github.com/molsim/HYDROID/archive/master.tar.gz
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-wget https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
-mkdir freesasa
-tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
-cd freesasa
-./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
-make; make install
+	wget https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+	mkdir freesasa
+	tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
+	cd freesasa
+	./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
+	make; make install
 
 #Test that it's working
 #Download example1 !!!!!!

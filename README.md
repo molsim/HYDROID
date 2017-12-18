@@ -4,18 +4,33 @@ HYDROID (HYDroxyl-Radical fOotprinting Interpretation for DNA) is a python packa
 ![HRF](docs/Figure1.png)
 
 ## Documentation
-[For full documentation - click here](docs/INDEX.md)
+[For detailed documentation - click here](docs/INDEX.md)
 
 Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGdsPyn0nVSvrRnyvuvkRCrNBjqeuC).
 
 ## Quick-start guide
 
-### Installation
-First, install Miniconda with Python2.7 from [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
-Use Continuum Anaconda ([conda_env.yml](conda_env.yml)).
+### Quick installation
+Install Miniconda with Python2.7 for your platform from [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
+`conda install -c hydroid hydroid`
 
-[INSTALL.md](docs/INSTALL.md) provides common installation examples for Linux, MacOS and PC.
+Test HYDROID:
 
+`HYDROID_test_exp`
+
+`HYDROID_test_pred`
+
+
+For alternative installation instructions for Linux, MacOS and PC see [INSTALL.md](docs/INSTALL.md).
+
+### Start by downloading and modifying an example
+
+`HYDOIRD_get_example1
+cd example1
+python exp_s2_assign_peaks.py
+...`
+
+See full example set and instructions in [examples](examples/README.md)
 
 ## Citing HYDROID
 Please cite HYDROID using following publications:
