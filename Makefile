@@ -6,7 +6,15 @@ clean-build:
 
 sdist:
 	rm -rf dist
+	rm *.egg-info
 	python setup.py sdist
 
 pypi-push:
-	twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+	twine upload dist/*
+
+gh-push:
+	git add .
+	git commit -m "Update"
+	git push
+
+upd: gh-push sdist pypi-push

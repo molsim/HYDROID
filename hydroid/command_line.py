@@ -4,6 +4,7 @@ import pkgutil
 import os
 from Bio.Seq import Seq
 import tempfile
+import os
 
 
 def test_exp():
@@ -18,7 +19,7 @@ def test_exp():
 	temp2.seek(0)
 	lane_profile_file = temp.name
 	lane_config_file = temp2.name
-	
+
 	temp.close()
 	temp2.close()
 	lane_names=['scCSE4_601TA_BS']
@@ -34,6 +35,8 @@ def test_exp():
 	for LN in lane_names:
 		assign_peaks_interactive(lane_profile_file,lane_config_file,LN)
 
+	os.remove(temp2.name)
+	os.remove(temp.name)
 
 
 def test_pred():
@@ -68,6 +71,8 @@ def test_pred():
 		get_DNA_H_SASA(p['pdb_file'],os.path.join(out_path,p['prof_name']+'_H-SASA.csv'),\
 			chain=p['chain'],resids=p['resids'],seq=p['seq'],probe_radius=1.4,slicen=200,vdw_set=p['vdw_set'],\
 			Hcontrib=[1.0]*7,n_threads=6,verbose=False)
+	
+	os.remove(temp.name)
 
 
 

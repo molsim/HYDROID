@@ -16,6 +16,7 @@ import pandas as pd
 import numpy as np
 import tempfile
 import freesasa
+import os
 
 def	get_DNA_H_SASA(pdb_file,csvfileout,chain=None,resids=[],seq=None,probe_radius=1.4,slicen=100,vdw_set=None,Hcontrib=[1.0]*7,n_threads=1,verbose=False):
 	"""
@@ -66,6 +67,7 @@ def	get_DNA_H_SASA(pdb_file,csvfileout,chain=None,resids=[],seq=None,probe_radiu
 		temp2.seek(0)
 		temp2.close()
 		classifier = freesasa.Classifier(temp2.name)
+		os.remove(temp2.name)
 		####
 		structure = freesasa.Structure(pdb_file,classifier, options={'hydrogen' : True,'hetatm' : True})
 	elif vdw_set=='amber10-rmin':
@@ -75,8 +77,10 @@ def	get_DNA_H_SASA(pdb_file,csvfileout,chain=None,resids=[],seq=None,probe_radiu
 		temp2.write(conffile)
 		temp2.seek(0)
 		temp2.close()
-		
+
 		classifier = freesasa.Classifier(temp2.name)
+		os.remove(temp2.name)
+		
 		####
 		structure = freesasa.Structure(pdb_file,classifier, options={'hydrogen' : True,'hetatm' : True})
 	else:
