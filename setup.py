@@ -61,22 +61,13 @@ setup(
     # project is installed.
     install_requires=[
         'biopython==1.68',
-        'cycler==0.10.0',
         'matplotlib==2.0.0',
-        'numpy==1.12.0',
-        'olefile==0.44',
-        'packaging==16.8',
-        'pandas==0.19.2',
-        'patsy==0.4.1',
+        'numpy=1.11.0',
+        'pandas>=0.19.2',
         'PeakUtils>=1.0.3',
         'Pillow==4.0.0',
-        'pyparsing==2.1.10',
-        'python-dateutil==2.6.0',
-        'pytz==2016.10',
         'scipy==0.18.1',
-        'six==1.10.0',
         'statsmodels==0.8.0',
-        'subprocess32==3.2.7',
     ],
     extras_require = {
     'pred': [
