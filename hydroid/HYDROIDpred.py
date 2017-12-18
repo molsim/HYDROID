@@ -60,22 +60,23 @@ def	get_DNA_H_SASA(pdb_file,csvfileout,chain=None,resids=[],seq=None,probe_radiu
 
 	if vdw_set=='charmm36-rmin':
 		#Open config from package in a tricky way, independent of package installation mode
-		temp2 = tempfile.NamedTemporaryFile()
-		conffile = pkgutil.get_data('HYDROID', 'pkgdata/charmm36_rmin.config')
+		temp2 = tempfile.NamedTemporaryFile(delete=False)
+		conffile = pkgutil.get_data('hydroid', 'pkgdata/charmm36_rmin.config')
 		temp2.write(conffile)
 		temp2.seek(0)
-		classifier = freesasa.Classifier(temp2.name)
 		temp2.close()
+		classifier = freesasa.Classifier(temp2.name)
 		####
 		structure = freesasa.Structure(pdb_file,classifier, options={'hydrogen' : True,'hetatm' : True})
 	elif vdw_set=='amber10-rmin':
 		#Open config from package in a tricky way, independent of package installation mode
-		temp2 = tempfile.NamedTemporaryFile()
-		conffile = pkgutil.get_data('HYDROID', 'pkgdata/amber10_rmin.config')
+		temp2 = tempfile.NamedTemporaryFile(delete=False)
+		conffile = pkgutil.get_data('hydroid', 'pkgdata/amber10_rmin.config')
 		temp2.write(conffile)
 		temp2.seek(0)
-		classifier = freesasa.Classifier(temp2.name)
 		temp2.close()
+		
+		classifier = freesasa.Classifier(temp2.name)
 		####
 		structure = freesasa.Structure(pdb_file,classifier, options={'hydrogen' : True,'hetatm' : True})
 	else:
