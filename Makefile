@@ -6,7 +6,7 @@ clean-build:
 
 sdist:
 	rm -rf dist
-	rm *.egg-info
+	rm -rf *.egg-info
 	python setup.py sdist
 
 pypi-push:
