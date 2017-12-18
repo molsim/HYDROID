@@ -5,8 +5,8 @@ clean-build:
 	rm --force --recursive *.egg-info
 
 sdist:
+	rm -rf dist
 	python setup.py sdist
 
 pypi-push:
-	rm --force --recursive dist/
 	twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
