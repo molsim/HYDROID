@@ -22,7 +22,7 @@ setup(
     long_description=long_description,
 
     # The project URL.
-    url='https://github.com/molsim/HYDROID',
+    url='https://github.com/ncbi/HYDROID',
 
     # Author details
     author='Alexey K. Shaytan, Grigoriy A. Armeev, David Landsman, Anna R. Panchenko',
