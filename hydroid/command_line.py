@@ -34,13 +34,14 @@ def test_exp():
 	temp.close()
 	temp2.close()
 
+
 def test_pred():
 
 	hydroid.HYDROIDpred import get_DNA_H_SASA
-	
+
 	out_path="results"
 	temp = tempfile.NamedTemporaryFile()
-	temp.write(pkgutil.get_data('hydoird', 'pkgdata/test_data/test.pdb'))
+	temp.write(pkgutil.get_data('hydroid', 'pkgdata/test_data/test.pdb'))
 	temp.seek(0)
 
 	try:
