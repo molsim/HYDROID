@@ -37,7 +37,7 @@ def test_exp():
 
 def test_pred():
 
-	hydroid.HYDROIDpred import get_DNA_H_SASA
+	from hydroid.HYDROIDpred import get_DNA_H_SASA
 
 	out_path="results"
 	temp = tempfile.NamedTemporaryFile()
