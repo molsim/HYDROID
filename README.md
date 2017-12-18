@@ -36,7 +36,7 @@ python exp_s2_assign_peaks.py
 ...
 ```
 
-See full example set and instructions in [examples](examples/README.md)
+See full example set and instructions in [examples](examples/README.md).
 
 ## Citing HYDROID
 Please cite HYDROID using following publications:
