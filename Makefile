@@ -8,4 +8,5 @@ sdist:
 	python setup.py sdist
 
 pypi-push:
+	rm --force --recursive dist/
 	twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
