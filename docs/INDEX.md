@@ -31,7 +31,7 @@ The name of the directory containing the contents of the package should always b
 ### Requirements
 - Python 2.7
 - Python modules specified in [requirements.txt](requirements.txt). 
-- [freesasa library](http://freesasa.github.io) v2.0.1 should be compiled with python bindings and accessible in python (only needed for HYDROIDpred).
+- [freesasa library](http://freesasa.github.io) v2.0.2 should be compiled with python bindings and accessible in python (only needed for HYDROIDpred).
 
 ### Installation examples
 
