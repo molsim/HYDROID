@@ -28,9 +28,9 @@ pip install https://github.com/molsim/HYDROID/archive/master.tar.gz
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-	wget https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+	wget https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 	mkdir freesasa
-	tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
+	tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
 	cd freesasa
 	./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
 	make; make install
@@ -58,9 +58,9 @@ source activate hydroid
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-wget https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+wget https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 mkdir freesasa
-tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
+tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
 cd freesasa
 ./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
 make; make install
@@ -76,7 +76,7 @@ python exp_s2_assign_peaks.py
 
 Download HYDROID manually from https://github.com/ncbi/HYDROID/archive/v0.0.3.tar.gz
 Extract its contents and change the directory name to `HYDROID`.
-Download FREESASA manually from https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+Download FREESASA manually from https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 Extract and place the contents in `freesasa` directory inside `HYDROID`
 Open command line, change directory to `HYDROID` folder and execute following commands.
 ~~~~
@@ -91,9 +91,9 @@ pip install -r requirements.txt
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 mkdir freesasa
-tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
+tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
 cd freesasa
 ./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
 make; make install
@@ -127,9 +127,9 @@ source activate hydroid
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.1/freesasa-2.0.1.tar.gz
+wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 mkdir freesasa
-tar -zxf freesasa-2.0.1.tar.gz -C freesasa --strip-components=1
+tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
 cd freesasa
 ./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
 make; make install
