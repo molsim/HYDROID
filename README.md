@@ -14,7 +14,7 @@ Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGd
 Install Miniconda with Python2.7 for your platform from [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
 
 ```
-conda install -c hydroid -c conda-forge hydroid
+conda install -c hydroid hydroid
 ```
 
 Test HYDROID:
