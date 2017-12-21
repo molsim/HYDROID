@@ -14,14 +14,14 @@ Video tutorial is [available here](https://www.youtube.com/playlist?list=PL_GHGd
 Install Miniconda with Python2.7 for your platform from [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
 
 ```
-conda install -c hydroid hydroid
+conda install -c hydroid -c conda-forge hydroid
 ```
 
 Test HYDROID:
 
 ```
-HYDROID_test_exp
-HYDROID_test_pred
+HYDROID_test_exp #Tests exeprimental data analysis module
+HYDROID_test_pred #Tests molecular structure analysis module (currently supported on Linux and OSX)
 ```
 
 
