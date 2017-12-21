@@ -1,15 +1,14 @@
 # HYDROID, Developer Docs
 
 ## What to do to ship a release:
-- increment version file
+- increment version file hydroid/VERSION
 - tag release
 - add example files to release
 - push to PiPy
-- make new anaconda package
+- make new anaconda package and deploy via this recipe https://github.com/intbio/hydroid-conda
 
 
 ## Deploying HYDROID to PyPi
-Increment hydroid/VERSION
 
 ```
 make sdist
@@ -36,22 +35,4 @@ conda install anaconda-client
 anaconda login
 ```
 
-```
-conda skeleton pypi hydroid
-```
-
-edit meta.yml
-comment out `tests: commands:` section
-build.sh change to
-`$PYTHON setup.py install --single-version-externally-managed --record=record.txt`
-bld.bat to
-`"%PYTHON%" setup.py install --single-version-externally-managed --record=record.txt`
-
-
-```
-conda config --set anaconda_upload yes
-conda-build -c conda-forge hydroid
-conda convert --platform all /Users/alexsha/miniconda2/conda-bld/osx-64/hydroid-0.0.4.post10-np111py27_0.tar.bz2 -o output/
-find output/ -name 'hydroid*' -exec anaconda upload {} \;
-```
 
