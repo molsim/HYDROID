@@ -4,7 +4,8 @@
 - increment version file hydroid/VERSION
 - tag release
 - add example files to release
-- make new anaconda package and deploy via this recipe https://github.com/intbio/hydroid-conda
+- Modify anaconda recipe https://github.com/intbio/hydroid-conda
+- Build cona package and deploy to anaconda cloud
 
 
 ### Optionally deploy HYDROID to PyPi (no FreeSASA module)
