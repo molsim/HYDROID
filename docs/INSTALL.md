@@ -1,5 +1,5 @@
-# Installation examples for HYDROID
-## General comments
+# HYDROID: Installation instructions
+## General approach
 There are many different ways of installing Python together with its modules.
 Installing Python and its modules is usually system specific. Using `virtualenv` together with `pip` or other python package managers (Continuum Anaconda, Enthought Canopy, WinPython) to match the exact versions of the modules is recommended. We provide environment files for `pip` ([requirements.txt](requirements.txt)) and Anaconda ([conda_env.yml](conda_env.yml)).
 
