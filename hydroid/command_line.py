@@ -74,6 +74,14 @@ def test_pred():
 	
 	os.remove(temp.name)
 
+def HYDROID_get_ex1():
+	
+	import urllib, json
+	
+	url="https://api.github.com/repositories/114399076/contents/examples/example1"
+	json_url = urlopen(url)
+	data = json.loads(json_url.read())
+	print data
 
 
 
