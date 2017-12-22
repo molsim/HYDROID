@@ -45,7 +45,7 @@ python setup.py install
 ## From scratch copy-paste instruction on various platforms (using virtual environments)
 Below we provide several copy-paste examples for different operating systems using native Python and separating the install into a virtual environment. 
 
-## On Ubuntu Linux (v16.04) with native Python
+## On Ubuntu Linux (v16.04 x64) with native Python
 Open bash terminal an execute following commands.
 ~~~~
 #prepare package manager and core packages
