@@ -93,7 +93,7 @@ pip install https://github.com/ncbi/HYDROID/archive/master.tar.gz
 
 #Install FREESASA (optional, only for HYDROIDpred)
 pip install Cython
-python -m wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
+python -m wget https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 mkdir freesasa
 tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
 cd freesasa
