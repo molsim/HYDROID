@@ -86,7 +86,7 @@ pip install virtualenv
 virtualenv venv
 source venv/bin/activate
 pip install --upgrade pip
-pip install pywget
+pip install wget
 
 #Install HYDROID
 pip install https://github.com/ncbi/HYDROID/archive/master.tar.gz
