@@ -129,6 +129,9 @@ cd HYDROID-master
 conda env create -f conda_env.yml
 source activate hydroid
 
+#Install HYDROID
+python setup.py install
+
 #Install FREESASA (optional, only for HYDROIDpred)
 conda install Cython
 wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
