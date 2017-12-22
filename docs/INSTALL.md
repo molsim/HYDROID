@@ -1,5 +1,13 @@
 # HYDROID: Installation instructions
 ## General approach
+### Requirements
+- Python 2.7
+- Python modules specified in [requirements.txt](../requirements.txt). 
+- [freesasa library](http://freesasa.github.io) v2.0.2 should be compiled with python bindings and accessible in python (only needed for HYDROIDpred).
+### Manual installation
+Latest stable version of HYDROID can be downloaded from the [releases page](https://github.com/ncbi/HYDROID/releases).
+After unarchiving the distribution.
+
 There are many different ways of installing Python together with its modules.
 Installing Python and its modules is usually system specific. Using `virtualenv` together with `pip` or other python package managers (Continuum Anaconda, Enthought Canopy, WinPython) to match the exact versions of the modules is recommended. We provide environment files for `pip` ([requirements.txt](requirements.txt)) and Anaconda ([conda_env.yml](conda_env.yml)).
 
