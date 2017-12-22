@@ -42,7 +42,7 @@ Run:
 python setup.py install
 ```
 
-## From scratch copy-paste instruction for installing HYDROID with native Python on various platforms in a virtual environment
+## From scratch copy-paste instruction on various platforms (using virtual environments)
 Below we provide several copy-paste examples for different operating systems using native Python and separating the install into a virtual environment. 
 
 ## On Ubuntu Linux (v16.04) with native Python
