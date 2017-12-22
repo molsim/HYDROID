@@ -42,7 +42,7 @@ Run:
 python setup.py install
 ```
 
-## From scratch copy-paste instruction on various platforms (using virtual environments)
+## From scratch copy-paste instructions on various platforms (using virtual environments)
 Below we provide several copy-paste examples for different operating systems using native Python and separating the install into a virtual environment. 
 
 ## On Ubuntu Linux (v16.04 x64) with native Python
@@ -130,7 +130,7 @@ conda env create -f conda_env.yml
 source activate hydroid
 
 #Install FREESASA (optional, only for HYDROIDpred)
-pip install Cython
+conda install Cython
 wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
 mkdir freesasa
 tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
