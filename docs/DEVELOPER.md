@@ -3,12 +3,11 @@
 ## What to do to ship a release:
 - increment version file hydroid/VERSION
 - tag release
-- add example files to release
 - Modify anaconda recipe https://github.com/intbio/hydroid-conda
-- Build cona package and deploy to anaconda cloud
+- Build conda package and deploy to anaconda cloud
 
 
-### Optionally deploy HYDROID to PyPi (no FreeSASA module)
+### Deploy HYDROID to PyPi (no FreeSASA module)
 
 ```
 make sdist
