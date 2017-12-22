@@ -114,7 +114,8 @@ test_pred()
 
 ## On MacOS with Continuum Anaconda Python
 
-First, install Miniconda with Python2.7 from [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
+First, install Miniconda with Python2.7 from [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
+
 Then open terminal an execute following commands.
 ~~~~
 conda install wget
