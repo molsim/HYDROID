@@ -112,4 +112,33 @@ test_exp()
 test_pred()
 ~~~~
 
+## On MacOS with Continuum Anaconda Python
 
+First, install Miniconda with Python2.7 from [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
+Then open terminal an execute following commands.
+~~~~
+conda install wget
+
+#download HYDROID
+wget --no-check-certificate https://github.com/ncbi/HYDROID/archive/master.tar.gz
+tar -zxf master.tar.gz
+cd HYDROID-master
+
+#Create environments and install packages
+conda env create -f conda_env.yml
+source activate hydroid
+
+#Install FREESASA (optional, only for HYDROIDpred)
+pip install Cython
+wget --no-check-certificate https://github.com/mittinatten/freesasa/releases/download/2.0.2/freesasa-2.0.2.tar.gz
+mkdir freesasa
+tar -zxf freesasa-2.0.2.tar.gz -C freesasa --strip-components=1
+cd freesasa
+./configure --enable-python-bindings --disable-json --disable-xml CFLAGS="-fPIC -O2" --prefix=`pwd`
+make; make install
+cd ..
+
+#Test that it's working
+HYDROID_test_exp #Tests exeprimental data analysis module
+HYDROID_test_pred #Tests molecular structure analysis module
+~~~~
