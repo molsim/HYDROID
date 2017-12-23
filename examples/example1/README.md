@@ -17,8 +17,14 @@ Video tutorial outlining the key steps is available [here](https://www.youtube.c
 ## Quantification of HRF gel electrophoresis images using [HYDROIDexp.py](../hydroid/HYDROIDexp.py).
 ### Step-by-step usage example:
 - Step 1: Extract lane profiles from gel images via ImageJ - see instructions in [exp_s1_extract_lp.md](exp_s1_extract_lp.md).
-- Step 2: Assign band peak locations - run [exp_s2_assign_peaks.py](exp_s2_assign_peaks.py)
-- Step 3: Assign peaks to DNA sequence - run [exp_s3_call_peaks.py](exp_s3_call_peaks.py)
+- Step 2: Assign band peak locations - see details in [exp_s2_assign_peaks.py](exp_s2_assign_peaks.py) and run it:
+```
+python exp_s2_assign_peaks.py
+```
+- Step 3: Assign peaks to DNA sequence - see details in [exp_s3_call_peaks.py](exp_s3_call_peaks.py) and run it:
+```
+exp_s3_call_peaks.py
+```
 - Step 4: Quantify cleavage frequencies by fitting a model to the data  - run [exp_s4_fit_model.py](exp_s4_fit_model.py), see [fitting results](results/scCSE4_601TA_BS_fitted_intensities.png).
 - Step 5: Plot cleavage frequencies along DNA sequence  - run [exp_s5_plot_cl_freq.py](exp_s5_plot_cl_freq.py), get the [resulting plots](results/scCSE4_601TA_BS_cl_freq_profile.png).
 
