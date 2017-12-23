@@ -6,7 +6,7 @@ HYDROID (HYDroxyl-Radical fOotprinting Interpretation for DNA) is a python packa
 The overall idea is outlined in the figure below.
 ![HRF](Figure1.png)
 
-For more information see [Theoretical backgroud of hydroxyl-radical footprinting](#theoretical-backgroud-of-hydroxyl-radical footprinting) section.
+For more information see [Theoretical backgroud of HRF](#theoretical-backgroud-of-HRF) section.
 
 ## Workflow
 
@@ -37,7 +37,7 @@ Detailed information about HYDROID algorithms can be found in the accompanying p
 Please cite HYDROID using following publication:
 - A.K. Shaytan et al. (in preparation)
 
-## Theoretical backgroud of hydroxyl-radical footprinting
+## Theoretical backgroud of HRF
 
 Hydroxyl-radical footprinting is one of [DNA footprinting methods](https://en.wikipedia.org/wiki/DNA_footprinting).
 
