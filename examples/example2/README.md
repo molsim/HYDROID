@@ -1,6 +1,6 @@
 # A step-by-step tutorial on analyzing HRF data. (Example 2)
 
-Data set: Chicken (Gallus gallus) nucleosomes reconstituted on a well-positioning 601 DNA sequence, DNA is radioactively labeled on 5' end. Data set taken from [Morozov et al., NAR 2009](https://www.ncbi.nlm.nih.gov/pubmed/?term=19509309).
+Data set: Chicken (Gallus gallus) nucleosomes reconstituted on a well-positioning 601 DNA sequence, DNA is radioactively labeled on 5' end. Products of PCR with dideoxynucleotide triphosphates were run side-by-side the HRF gel lanes to assign HRF peaks to DNA sequence. Data set taken from [Morozov et al., NAR 2009](https://www.ncbi.nlm.nih.gov/pubmed/?term=19509309).
 
 This is a generic example that outlines HRF data quantification from a gel image with 5' labeled DNA. It illustrates algorithm robustness with respect to quantification of independent experiments, noise tolerance and special fitting features such as constraints on the peak width and acconting for the peaks outside of the studied data range.
 
