@@ -1,5 +1,5 @@
 # A step-by-step tutorial on analyzing HRF data of a protein-DNA complex and comparing it to a PDB structure. (Example 1)
-System: *S. cerevisiae* centromeric nucleosome reconstituted on a well-positioning 601TA DNA sequence, DNA is radioactively labeled on 3' end. Data set taken from [Shaytan et al. NAR 2017](https://www.ncbi.nlm.nih.gov/pubmed/28934480)
+System: *S. cerevisiae* centromeric nucleosome reconstituted on a well-positioning 601TA DNA sequence, DNA is radioactively labeled on 3' end. Data set taken from [Shaytan et al., NAR (2017)](https://www.ncbi.nlm.nih.gov/pubmed/28934480)
 
 This is a generic example that outlines (1) HRF data quantification from a gel image with 3' labeled DNA, (2) prediction of theoretical profiles from PDB strucutres, (3) data comparison.
 
