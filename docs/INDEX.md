@@ -28,7 +28,7 @@ The overall workflow is oulined in the figure below.
 - HYDROIDpred, Step 2: `get_DNA_H_SASA` function is used to calculate theoretical cleavage frequency profiles from PDB structures.
 - HYDROIDpred, Step 3: `plot_prof_on_seq` function is used to produce plots of theoretical cleavage frequency profile along DNA sequence.
 
-Finally, experimental and theoretical cleavage frequency profiles are compared to validate/invalidate/refine the model. 
+Finally, experimental and theoretical cleavage frequency profiles are compared to validate/invalidate/refine the model and/or interpret experimental data. 
 
 
 ![WF](Figure2.png)
