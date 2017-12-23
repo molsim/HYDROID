@@ -1,4 +1,4 @@
-#Step 1: Extracting lane profiles from gel electrophoresis images
+# Step 1: Extracting lane profiles from gel electrophoresis images
 The following polyacrylamide gel electrophoresis (PAGE) image is taken from Shaytan et al. 2017 (submitted) and represents HRF results of 601TA DNA sequence incorporated into *S. cerevisiae* centromeric nucleosome. The original PAGE image for the top and bottom strands of the DNA together with Maxam-Gilbert sequencing reaction lanes are shown. The DNA strands were radioactively labeled at 3' end.
 ![HRF_601TACSE4](data/gel.png)
 
