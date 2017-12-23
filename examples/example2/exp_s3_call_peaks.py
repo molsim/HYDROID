@@ -23,7 +23,7 @@ from Bio import SeqIO
 
 import sys
 
-from HYDROID.HYDROIDexp import call_peaks_interactive
+from hydroid.HYDROIDexp import call_peaks_interactive
 
 lane_profile_file="data/lane_profiles.xls"
 lane_config_file="data/lane_config.csv"
