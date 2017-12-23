@@ -8,12 +8,13 @@ The overall idea of the HRF approach is outlined in the figure below. Protein-DN
 
 For more information see [Theoretical backgroud of HRF](#theoretical-backgroud-of-hrf) section.
 
-## Workflow
+## The HYDROID approach and workflow
 
-This package has two Python modules implementing complementary functionalities:
+This package provides two Python modules implementing complementary functionalities:
 * [HYDROIDexp](../hydroid/HYDROIDexp.py) - extraction of DNA cleavage frequency profiles from gel electrophoresis images.
 * [HYDROIDpred](../hydroid/HYDROIDpred.py) - estimation of theoretical DNA cleavage frequency profiles from PDB structures through estimating deoxyribose hydrogen atoms solvent accessibility (H-SASA).
 
+The overall workflow is oulines in the figure below.
 ![WF](Figure2.png)
 
 ## Documentation
