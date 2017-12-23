@@ -13,7 +13,7 @@ from Bio.Seq import Seq
 import os,sys,tempfile
 import pandas as pd
 
-from HYDROID.HYDROIDexp import plot_prof_on_seq
+from hydroid.HYDROIDexp import plot_prof_on_seq
 
 
 out_path="results"

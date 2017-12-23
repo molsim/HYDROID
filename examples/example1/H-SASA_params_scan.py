@@ -32,7 +32,7 @@ if PARALLEL:
 	from multiprocessing import Process, Manager
 
 
-from HYDROID.HYDROIDpred import get_DNA_H_SASA
+from hydroid.HYDROIDpred import get_DNA_H_SASA
 
 out_path="results"
 str_path="data/structures"

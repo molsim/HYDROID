@@ -18,7 +18,7 @@ import os,sys,tempfile
 sys.path.insert(0,'../venv/lib/python2.7/site-packages')
 
 from Bio.Seq import Seq
-from HYDROID.HYDROIDpred import get_DNA_H_SASA
+from hydroid.HYDROIDpred import get_DNA_H_SASA
 import pandas as pd
 import numpy as np
 

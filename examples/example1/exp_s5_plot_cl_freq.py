@@ -13,7 +13,7 @@ from Bio import SeqIO
 import os
 import sys
 
-from HYDROID.HYDROIDexp import plot_prof_on_seq
+from hydroid.HYDROIDexp import plot_prof_on_seq
 
 out_path="results"
 try:

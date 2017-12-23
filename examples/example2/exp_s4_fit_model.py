@@ -15,7 +15,7 @@ from Bio import SeqIO
 from os import mkdir
 import sys
 
-from HYDROID.HYDROIDexp import fit_peaks
+from hydroid.HYDROIDexp import fit_peaks
 
 lane_profile_file="data/lane_profiles.xls"
 lane_config_file="data/lane_config.csv"

@@ -16,7 +16,7 @@ import os,sys,tempfile
 import pandas as pd
 
 
-from HYDROID.HYDROIDexp import plot_prof_on_seq,simulate_gel
+from hydroid.HYDROIDexp import plot_prof_on_seq,simulate_gel
 
 out_path="results"
 try:

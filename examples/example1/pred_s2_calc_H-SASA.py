@@ -18,7 +18,7 @@ See get_DNA_H_SASA inline help for explanation of parameters.
 import os
 from Bio.Seq import Seq
 
-from HYDROID.HYDROIDpred import get_DNA_H_SASA
+from hydroid.HYDROIDpred import get_DNA_H_SASA
 
 out_path="results"
 str_path="data/structures"
