@@ -20,6 +20,12 @@ Several function provide GUI interfaces for interactive data adjustment and anal
 The overall workflow is oulined in the figure below.
 ![WF](Figure2.png)
 
+## HYDROID features
+- 2 in 1: HRF experimental data quantification + theoretical analysis of atomistic structures
+- Cross-platform python scripted solution, can be install on Linux, MacOS, Windows
+- Completely free and relies on open source components such as ImageJ and FreeSASA
+- Provides examples of raw data analysis together with data analysis workflows.
+
 ## Documentation
 
 The esiest way to get familiar with HYDROID is to follow one of the well documented step-by-step [examples](../examples) and modify them as needed for the user data:
