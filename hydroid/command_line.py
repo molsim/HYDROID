@@ -75,13 +75,38 @@ def test_pred():
 	os.remove(temp.name)
 
 def HYDROID_get_ex1():
-	
+
 	import urllib, json
-	
-	url="https://api.github.com/repositories/114399076/contents/examples/example1"
-	json_url = urlopen(url)
-	data = json.loads(json_url.read())
-	print data
+	import os
+	url="https://api.github.com/repos/ncbi/HYDROID/contents/examples/example1"
 
+	def get_files_from_git(gitapiurl,savefoldername):
+		os.mkdir(savefoldername)
+		json_url = urllib.urlopen(gitapiurl)
+		data = json.loads(json_url.read())
+		for d in data:
+			if(d['type']=='file'):
+				print("Downloading "+os.path.join(savefoldername,d['name']))
+				urllib.urlretrieve(d['download_url'],os.path.join(savefoldername,d['name']))
+			if(d['type']=='dir'):
+				get_files_from_git(d['url'],os.path.join(savefoldername,d['name']))
+	get_files_from_git(url,'example1')
 
+def HYDROID_get_ex2():
+
+	import urllib, json
+	import os
+	url="https://api.github.com/repos/ncbi/HYDROID/contents/examples/example2"
+
+	def get_files_from_git(gitapiurl,savefoldername):
+		os.mkdir(savefoldername)
+		json_url = urllib.urlopen(gitapiurl)
+		data = json.loads(json_url.read())
+		for d in data:
+			if(d['type']=='file'):
+				print("Downloading "+os.path.join(savefoldername,d['name']))
+				urllib.urlretrieve(d['download_url'],os.path.join(savefoldername,d['name']))
+			if(d['type']=='dir'):
+				get_files_from_git(d['url'],os.path.join(savefoldername,d['name']))
+	get_files_from_git(url,'example2')
 
