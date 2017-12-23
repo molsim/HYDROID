@@ -6,7 +6,7 @@ HYDROID (HYDroxyl-Radical fOotprinting Interpretation for DNA) is a python packa
 The overall idea is outlined in the figure below.
 ![HRF](Figure1.png)
 
-For more information see [Theoretical backgroud of HRF](#theoretical-backgroud-of-HRF) section.
+For more information see [Theoretical backgroud of HRF](#theoretical-backgroud-of-hrf) section.
 
 ## Workflow
 
