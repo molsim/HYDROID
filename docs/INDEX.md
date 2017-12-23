@@ -22,7 +22,9 @@ The overall workflow is oulined in the figure below.
 
 ## HYDROID features
 - 2 in 1: HRF experimental data quantification + theoretical analysis of atomistic structures
-- Cross-platform python scripted solution, can be install on Linux, MacOS, Windows
+- Extracts cleavage intensities at individual DNA nucleotides by a number of constraint fitting algorithms
+- Uses both Gaussian and Lorentzian models for band intensities
+- Cross-platform python-scripted solution, can be install on Linux, MacOS, Windows
 - Completely free and relies on open source components such as ImageJ and FreeSASA
 - Provides examples of raw data analysis together with data analysis workflows.
 
