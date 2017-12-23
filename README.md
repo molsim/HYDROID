@@ -30,7 +30,7 @@ For alternative installation instructions for Linux, MacOS and PC see [INSTALL.m
 ### Start by downloading and modifying an example
 
 ```
-HYDOIRD_get_example1
+HYDOIRD_get_ex1
 cd example1
 python exp_s2_assign_peaks.py
 ...
