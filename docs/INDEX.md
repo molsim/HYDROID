@@ -14,18 +14,28 @@ This package provides two Python modules implementing complementary functionalit
 * [HYDROIDexp](../hydroid/HYDROIDexp.py) - extraction and quantification of DNA cleavage frequency profiles from gel electrophoresis images.
 * [HYDROIDpred](../hydroid/HYDROIDpred.py) - estimation of theoretical DNA cleavage frequency profiles from PDB structures through estimating deoxyribose hydrogen atoms solvent accessibility (H-SASA).
 
+Every step is implemented as a Python functions that can be launched from a Python script.
+Several function provide GUI interfaces for interactive data adjustment and analysis.
+
 The overall workflow is oulined in the figure below.
 ![WF](Figure2.png)
 
 ## Documentation
 
-Several step-by-step examples serve as a manual to the package.
+The esiest way to get familiar with HYDROID is to follow one of the well documented step-by-step examples and modify them as needed for the user data:
+
 * [Example 1](../examples/example1): Quantifying HRF of a centromeric nucleosome with DNA radioactively labeled at 3' end. Predicting cleavage frequency profiles from an atomistic structure model and comparing to experimental ones.
 * [Example 2](../examples/example2): Quantifying HRF of a nucleosome with DNA radioactively labeled at 5' end. Highlights conversion of gel images to data profiles via ImageJ.
 
+The example source code can be convinently downloaded by issing following commands in the terminal:
+```
+HYDROID_get_ex1 # download Example 1 to the current directory
+HYDROID_get_ex2 # download Example 2 to the current directory
+```
+
 Video tutorial is available [here](https://www.youtube.com/playlist?list=PL_GHGdsPyn0nVSvrRnyvuvkRCrNBjqeuC).
 
-DocString documentation for every function is provided inside the libraries and step-by-step example python files.
+DocString documentation for every function is provided inside the modules as well as step-by-step example Python files.
 
 Detailed information about HYDROID algorithms can be found in the accompanying publication: A.K. Shaytan et al. (in preparation)
 
