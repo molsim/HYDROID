@@ -3,6 +3,14 @@ HYDROID (HYDroxyl-Radical fOotprinting Interpretation for DNA) is a python packa
 
 ![HRF](docs/Figure1.png)
 
+## HYDROID features
+- 2 in 1: HRF experimental data quantification + theoretical analysis of atomistic structures
+- Extracts cleavage intensities at individual DNA nucleotides by a number of constraint fitting algorithms
+- Uses both Gaussian and Lorentzian models for band intensities
+- Cross-platform python-scripted solution, can be install on Linux, MacOS, Windows
+- Completely free and relies on open source components such as ImageJ and FreeSASA
+- Provides examples of raw data analysis together with data analysis workflows.
+
 ## Documentation
 [For detailed documentation - click here](docs/INDEX.md).
 
