@@ -1,15 +1,20 @@
-# Step-by-step tutorial on analyzing HRF data of a protein-DNA complex and comparing it to a PDB structure. (Example 1)
-System: *S. cerevisiae* centromeric nucleosome reconstituted on a well-positioning 601TA DNA sequence, DNA is radioactively labeled on 3' end. Data set taken from [Shaytan et al., unpublished](https://www.ncbi.nlm.nih.gov/pubmed/)
+# A step-by-step tutorial on analyzing HRF data of a protein-DNA complex and comparing it to a PDB structure. (Example 1)
+System: *S. cerevisiae* centromeric nucleosome reconstituted on a well-positioning 601TA DNA sequence, DNA is radioactively labeled on 3' end. Data set taken from [Shaytan et al. NAR 2017](https://www.ncbi.nlm.nih.gov/pubmed/28934480)
 
 This is a generic example that outlines (1) HRF data quantification from a gel image with 3' labeled DNA, (2) prediction of theoretical profiles from PDB strucutres, (3) data comparison.
 
 Python files implementing every step are provided in this directory.
 
+The contents of this directory can be conveniently downloaded by the following command once HYDROID is installed:
+```
+HYDROID_get_ex1
+```
+
 Document [H-SASA_params.md](H-SASA_params.md) further outlines details of theoretical cleavage profiles calculation and their dependence on various parameters.
 
 Video tutorial outlining the key steps is available [here](https://www.youtube.com/playlist?list=PL_GHGdsPyn0nVSvrRnyvuvkRCrNBjqeuC).
 
-## Quantification of HRF gel electrophoresis images using [HYDROIDexp.py](../HYDROIDexp.py).
+## Quantification of HRF gel electrophoresis images using [HYDROIDexp.py](../hydroid/HYDROIDexp.py).
 ### Step-by-step usage example:
 - Step 1: Extract lane profiles from gel images via ImageJ - see instructions in [exp_s1_extract_lp.md](exp_s1_extract_lp.md).
 - Step 2: Assign band peak locations - run [exp_s2_assign_peaks.py](exp_s2_assign_peaks.py)
