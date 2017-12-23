@@ -8,7 +8,7 @@ Calling peaks (assigning DNA sequence positions to individual peaks)
 
 Peak calling is usually accomplished by comparing footprinting lanes to sequencing lanes or other data.
 
-In this step the user is allowed to compare Maxam-Guilbert and HRF profiles on same plots
+In this step the user is allowed to compare Maxam-Gilbert and HRF profiles on same plots
 and to interactively specify the location of any band peak on the DNA sequence.
 Sequence calling for all other peaks will be done automatically.
 
@@ -22,7 +22,7 @@ from Bio import SeqIO
 
 import sys
 
-from HYDROID.HYDROIDexp import call_peaks_interactive
+from hydroid.HYDROIDexp import call_peaks_interactive
 
 lane_profile_file="data/lane_profiles.xls"
 lane_config_file="data/lane_config.csv"
