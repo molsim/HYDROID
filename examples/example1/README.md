@@ -23,7 +23,7 @@ python exp_s2_assign_peaks.py
 ```
 - Step 3: Assign peaks to DNA sequence - see details in [exp_s3_call_peaks.py](exp_s3_call_peaks.py) and run it:
 ```
-exp_s3_call_peaks.py
+python exp_s3_call_peaks.py
 ```
 - Step 4: Quantify cleavage frequencies by fitting a model to the data  - run [exp_s4_fit_model.py](exp_s4_fit_model.py), see [fitting results](results/scCSE4_601TA_BS_fitted_intensities.png).
 - Step 5: Plot cleavage frequencies along DNA sequence  - run [exp_s5_plot_cl_freq.py](exp_s5_plot_cl_freq.py), get the [resulting plots](results/scCSE4_601TA_BS_cl_freq_profile.png).
