@@ -18,6 +18,19 @@ Every step is implemented as a Python functions that can be launched from a Pyth
 Several function provide GUI interfaces for interactive data adjustment and analysis.
 
 The overall workflow is oulined in the figure below.
+- HYDROIDexp, Step 1: A PAGE image with HRF lanes and sequencing lanes is digitized into a data file using ImageJ.
+- HYDROIDexp, Step 2: `assign_peaks_interactive` function is used to interactively map the position of the bands on the profile.
+- HYDROIDexp, Step 3: `call_peaks_interactive` function is used to interactively compare HRF profiles with DNA sequencing reaction profile to map the position of the peaks to the DNA sequence.
+- HYDROIDexp, Step 4: `fit_peaks` function is used to deconvolute HRF profiles into contributions of individual bands by using Gaussian or Lorentzian models for the intensity of every band on the gel.
+- HYDROIDexp, Step 5: `plot_prof_on_seq` function is used to produce plots of cleavage frequency profile along DNA sequence.
+
+- HYDROIDpred, Step 1: A structure of DNA-protein complex is prepared in PDB-format with hydrogen atoms in place.
+- HYDROIDpred, Step 2: `get_DNA_H_SASA` function is used to calculate theoretical cleavage frequency profiles from PDB structures.
+- HYDROIDpred, Step 3: `plot_prof_on_seq` function is used to produce plots of theoretical cleavage frequency profile along DNA sequence.
+
+Finally, experimental and theoretical cleavage frequency profiles are compared to validate/invalidate/refine the model. 
+
+
 ![WF](Figure2.png)
 
 ## HYDROID features
