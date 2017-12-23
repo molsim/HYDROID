@@ -54,6 +54,7 @@ Hydroxyl-radical footprinting is one of [DNA footprinting methods](https://en.wi
 
 For the initial familiarization with hydroxyl-radical footprinting techniques and theory following references and references therein are suggested:
 
-* Jain, S.S. and Tullius, T.D. (2008) [Footprinting protein-DNA complexes using the hydroxyl radical. Nature protocols, 3, 1092-1100.](http://www.nature.com/nprot/journal/v3/n6/full/nprot.2008.72.html)
+* Jain SS, Tullius TD (2008) [Footprinting protein-DNA complexes using the hydroxyl radical. Nature protocols, 3, 1092-1100.](http://www.nature.com/nprot/journal/v3/n6/full/nprot.2008.72.html)
+* Balasubramanian B, Pogozelski WK, Tullius TD (1997) [DNA strand breaking by the hydroxyl radical is governed by the accessible surface areas of the hydrogen atoms of the DNA backbone. PNAS, 95, 9738-43.](https://www.ncbi.nlm.nih.gov/pubmed/9707545)
 
 
